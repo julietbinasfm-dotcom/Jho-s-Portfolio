@@ -444,7 +444,7 @@
             font-weight: 300;
         }
 
-        /* SLIDE 5: SAMPLE WORKS (ARTISTIC) */
+        /* Slide 5: Sample Works Grid */
         .sample-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -518,7 +518,73 @@
             letter-spacing: 0.5px;
         }
 
-        /* Slide 6: Toolkit Cloud */
+        /* Slide 6: Requirements Grid (NEW) */
+        .req-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-top: 14px;
+            height: 100%;
+        }
+
+        .req-card {
+            background: var(--card-surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .req-card:hover {
+            border-color: var(--accent-pink);
+            transform: translateY(-3px);
+            background: rgba(35, 24, 44, 0.85);
+        }
+
+        .req-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .req-count {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-pink);
+            background: rgba(244, 114, 182, 0.1);
+            padding: 2px 8px;
+            border-radius: 8px;
+            border: 1px solid rgba(244, 114, 182, 0.2);
+        }
+
+        .req-title {
+            font-family: var(--font-serif);
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .req-desc {
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            font-weight: 300;
+            margin-top: 4px;
+        }
+
+        .req-note {
+            font-size: 0.65rem;
+            color: var(--accent-gold);
+            margin-top: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Slide 7: Toolkit Cloud */
         .tag-cloud {
             display: flex;
             flex-wrap: wrap;
@@ -555,7 +621,7 @@
             box-shadow: 0 0 8px var(--accent-pink);
         }
 
-        /* Slide 7: Process & CTA */
+        /* Slide 8: Process & CTA */
         .process-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -613,7 +679,7 @@
                 height: auto;
                 padding: 30px;
             }
-            .cover-content, .split-layout, .services-grid, .case-layout, .sample-grid, .process-grid {
+            .cover-content, .split-layout, .services-grid, .case-layout, .sample-grid, .req-grid, .process-grid {
                 grid-template-columns: 1fr;
             }
             .cta-bar {
@@ -626,11 +692,11 @@
 </head>
 <body>
 
-    <!-- SLIDE 1: ARTISTIC COVER -->
+    <!-- SLIDE 1: COVER -->
     <div class="slide">
         <div class="slide-header">
             <span class="brand-name"><span class="brand-dot"></span>Juliet Binas</span>
-            <span class="slide-number">01 / 07</span>
+            <span class="slide-number">01 / 08</span>
         </div>
         <div class="cover-content">
             <div>
@@ -668,7 +734,7 @@
     <div class="slide">
         <div class="slide-header">
             <span class="brand-name"><span class="brand-dot"></span>Juliet Binas</span>
-            <span class="slide-number">02 / 07</span>
+            <span class="slide-number">02 / 08</span>
         </div>
         <div class="split-layout">
             <div class="portrait-container">
@@ -702,7 +768,7 @@
     <div class="slide">
         <div class="slide-header">
             <span class="brand-name"><span class="brand-dot"></span>Juliet Binas</span>
-            <span class="slide-number">03 / 07</span>
+            <span class="slide-number">03 / 08</span>
         </div>
         <div class="services-grid">
             <div class="service-card">
@@ -748,7 +814,7 @@
     <div class="slide">
         <div class="slide-header">
             <span class="brand-name"><span class="brand-dot"></span>Juliet Binas</span>
-            <span class="slide-number">04 / 07</span>
+            <span class="slide-number">04 / 08</span>
         </div>
         <div class="case-layout">
             <div class="case-visual-box">
@@ -787,11 +853,11 @@
         </div>
     </div>
 
-    <!-- SLIDE 5: SAMPLE WORKS (NEW & ARTISTIC) -->
+    <!-- SLIDE 5: SAMPLE WORKS -->
     <div class="slide">
         <div class="slide-header">
             <span class="brand-name"><span class="brand-dot"></span>Juliet Binas</span>
-            <span class="slide-number">05 / 07</span>
+            <span class="slide-number">05 / 08</span>
         </div>
         <div style="display: flex; flex-direction: column; height: 100%;">
             <h2 class="section-title">CURATED SAMPLE WORKS</h2>
@@ -846,11 +912,91 @@
         </div>
     </div>
 
-    <!-- SLIDE 6: TOOLKIT -->
+    <!-- SLIDE 6: WORK REQUIREMENTS CHECKLIST (NEW SLIDE) -->
     <div class="slide">
         <div class="slide-header">
             <span class="brand-name"><span class="brand-dot"></span>Juliet Binas</span>
-            <span class="slide-number">06 / 07</span>
+            <span class="slide-number">06 / 08</span>
+        </div>
+        <div style="display: flex; flex-direction: column; height: 100%;">
+            <h2 class="section-title">PORTFOLIO WORK DELIVERABLES</h2>
+            <p class="subtitle">Categorized breakdown of manual graphics, AI media, copywriting, and social media assets.</p>
+            
+            <div class="req-grid">
+                <div class="req-card">
+                    <div>
+                        <div class="req-header">
+                            <span class="req-title">Reels & Videos</span>
+                            <span class="req-count">Min. 5</span>
+                        </div>
+                        <p class="req-desc">Short-form videos and reels crafted manually without AI-generated visuals.</p>
+                    </div>
+                    <div class="req-note">✦ 100% Manual Video Editing</div>
+                </div>
+
+                <div class="req-card">
+                    <div>
+                        <div class="req-header">
+                            <span class="req-title">Manual Graphics</span>
+                            <span class="req-count">Min. 5</span>
+                        </div>
+                        <p class="req-desc">Handcrafted graphic design assets created manually without AI visuals.</p>
+                    </div>
+                    <div class="req-note">✦ Vector & Photoshop Editing</div>
+                </div>
+
+                <div class="req-card">
+                    <div>
+                        <div class="req-header">
+                            <span class="req-title">AI Graphics</span>
+                            <span class="req-count">Min. 5</span>
+                        </div>
+                        <p class="req-desc">AI-generated image assets, studio photography, and product concepts.</p>
+                    </div>
+                    <div class="req-note">✦ Generative Visual Design</div>
+                </div>
+
+                <div class="req-card">
+                    <div>
+                        <div class="req-header">
+                            <span class="req-title">AI Videos</span>
+                            <span class="req-count">Min. 5</span>
+                        </div>
+                        <p class="req-desc">Generative AI video clips, motion animations, and synthesized clips.</p>
+                    </div>
+                    <div class="req-note">✦ Generative Motion Suite</div>
+                </div>
+
+                <div class="req-card">
+                    <div>
+                        <div class="req-header">
+                            <span class="req-title">Copywriting</span>
+                            <span class="req-count">Min. 10</span>
+                        </div>
+                        <p class="req-desc">Captions, brand narrative text, story copy, and ad scripts.</p>
+                    </div>
+                    <div class="req-note">✦ Strategic Brand Voice</div>
+                </div>
+
+                <div class="req-card">
+                    <div>
+                        <div class="req-header">
+                            <span class="req-title">SMM Samples</span>
+                            <span class="req-count">Bonus</span>
+                        </div>
+                        <p class="req-desc">Other relevant Social Media Management work samples and campaign assets.</p>
+                    </div>
+                    <div class="req-note">✦ Full Strategy & Curation</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 7: TOOLKIT -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="brand-name"><span class="brand-dot"></span>Juliet Binas</span>
+            <span class="slide-number">07 / 08</span>
         </div>
         <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
             <h2 class="section-title">CREATIVE TOOLKIT</h2>
@@ -868,11 +1014,11 @@
         </div>
     </div>
 
-    <!-- SLIDE 7: PROCESS & CTA -->
+    <!-- SLIDE 8: PROCESS & CTA -->
     <div class="slide">
         <div class="slide-header">
             <span class="brand-name"><span class="brand-dot"></span>Juliet Binas</span>
-            <span class="slide-number">07 / 07</span>
+            <span class="slide-number">08 / 08</span>
         </div>
         <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
             <div>
