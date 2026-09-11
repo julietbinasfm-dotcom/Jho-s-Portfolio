@@ -518,7 +518,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* Slide 6: Requirements Grid (NEW) */
+        /* Slide 6: Requirements Grid */
         .req-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -531,7 +531,7 @@
             background: var(--card-surface);
             border: 1px solid var(--glass-border);
             border-radius: 16px;
-            padding: 16px;
+            padding: 18px 16px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -548,23 +548,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 8px;
-        }
-
-        .req-count {
-            font-family: var(--font-serif);
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--accent-pink);
-            background: rgba(244, 114, 182, 0.1);
-            padding: 2px 8px;
-            border-radius: 8px;
-            border: 1px solid rgba(244, 114, 182, 0.2);
+            margin-bottom: 6px;
         }
 
         .req-title {
             font-family: var(--font-serif);
-            font-size: 1.05rem;
+            font-size: 1.15rem;
             color: var(--text-primary);
             font-weight: 600;
         }
@@ -580,7 +569,7 @@
         .req-note {
             font-size: 0.65rem;
             color: var(--accent-gold);
-            margin-top: 6px;
+            margin-top: 8px;
             letter-spacing: 0.5px;
         }
 
@@ -912,7 +901,7 @@
         </div>
     </div>
 
-    <!-- SLIDE 6: WORK REQUIREMENTS CHECKLIST (NEW SLIDE) -->
+    <!-- SLIDE 6: WORK REQUIREMENTS CHECKLIST (UPDATED SLIDE) -->
     <div class="slide">
         <div class="slide-header">
             <span class="brand-name"><span class="brand-dot"></span>Juliet Binas</span>
@@ -927,7 +916,6 @@
                     <div>
                         <div class="req-header">
                             <span class="req-title">Reels & Videos</span>
-                            <span class="req-count">Min. 5</span>
                         </div>
                         <p class="req-desc">Short-form videos and reels crafted manually without AI-generated visuals.</p>
                     </div>
@@ -938,7 +926,6 @@
                     <div>
                         <div class="req-header">
                             <span class="req-title">Manual Graphics</span>
-                            <span class="req-count">Min. 5</span>
                         </div>
                         <p class="req-desc">Handcrafted graphic design assets created manually without AI visuals.</p>
                     </div>
@@ -949,7 +936,6 @@
                     <div>
                         <div class="req-header">
                             <span class="req-title">AI Graphics</span>
-                            <span class="req-count">Min. 5</span>
                         </div>
                         <p class="req-desc">AI-generated image assets, studio photography, and product concepts.</p>
                     </div>
@@ -960,7 +946,6 @@
                     <div>
                         <div class="req-header">
                             <span class="req-title">AI Videos</span>
-                            <span class="req-count">Min. 5</span>
                         </div>
                         <p class="req-desc">Generative AI video clips, motion animations, and synthesized clips.</p>
                     </div>
@@ -971,7 +956,6 @@
                     <div>
                         <div class="req-header">
                             <span class="req-title">Copywriting</span>
-                            <span class="req-count">Min. 10</span>
                         </div>
                         <p class="req-desc">Captions, brand narrative text, story copy, and ad scripts.</p>
                     </div>
@@ -982,7 +966,6 @@
                     <div>
                         <div class="req-header">
                             <span class="req-title">SMM Samples</span>
-                            <span class="req-count">Bonus</span>
                         </div>
                         <p class="req-desc">Other relevant Social Media Management work samples and campaign assets.</p>
                     </div>
